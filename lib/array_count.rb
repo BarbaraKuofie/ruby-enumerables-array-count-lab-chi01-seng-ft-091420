@@ -3,7 +3,7 @@ def count_strings(array)
   array.count do |words|
     words.is_a? (String)
   end 
-    count_strings
+    array.count 
 end
 
 def count_empty_strings(array)
@@ -11,5 +11,5 @@ def count_empty_strings(array)
   array.count do |empty_string|
     empty_string.empty?
   end 
-count_empty_strings
+array.count 
 end
